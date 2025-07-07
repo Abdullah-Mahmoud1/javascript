@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Abdullah Mahmoud</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<!-- Body -->
+<body class="Background">   
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <!-- Background video -->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Abdullah Mahmoud's Portfolio</h1>
+        <strong>
+            <p class="center quote">
+                <q>Technology empowers students not only to solve problems, but to imagine new worlds and build them line by line.</q>
+                <br> – Unknown<br><br>
+                Hello! I'm Abdullah Mahmoud, a curious and motivated student developer.
+                <br>I’ve built this portfolio to share my journey in programming, showcase my projects, and highlight the skills I’m learning every day.
+                <br><br>
+                Thanks for stopping by — I hope you find something that inspires you!
+            </p>
+        </strong>
+    </div>
+
+    <!-- Slideshow -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background"> 
+            <div id="Slideshow_Container">
+                <!-- Slides -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_1280.jpg">
+                    <div class="text">Excited to grow as a developer and collaborate on real-world projects.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png"> 
+                    <div class="text">Learning HTML, CSS & JavaScript with enthusiasm!</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_1280.jpg">
+                    <div class="text">Exploring Python for data and automation tasks.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923_1280.png">
+                    <div class="text">Starting my journey with C# and .NET development.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg"> 
+                    <div class="text">Interested in database management using SQL.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg"> 
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Let’s get in touch!</a></div> 
+                </div>
+                <!-- Navigation -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <img src="https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_1280.jpg" alt="Laptop">
+        </div>
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                My name is Abdullah Mahmoud, a student passionate about learning how technology shapes the world.
+                <br><br>
+                I am currently studying software development and exploring web technologies. I recently completed a training program through
+                <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> where I gained hands-on experience with:
+                HTML, CSS, JavaScript, Python, SQL, and C#.
+                <br><br>
+                I believe in building solutions that are both functional and elegant. If you're working on something cool, I'd love to contribute!
+                <a onclick="openForm()" class="contact">Let's connect!</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>Explore my latest projects and code samples:</p>
+            <p class="center"><a href="https://github.com/Abdullah-Mahmoud1" target="_blank">My GitHub</a></p>
+        </div>
+        <div class="Column_2">
+            <a href="https://github.com/Abdullah-Mahmoud1" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2021/09/23/06/59/github-6648895_1280.jpg" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm" ondblclick="closeForm()">
+            <form action="" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>		
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="center">&copy; Abdullah Mahmoud, <a href="https://github.com/Abdullah-Mahmoud1" target="_blank">My GitHub</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
